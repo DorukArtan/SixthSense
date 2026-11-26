@@ -1,4 +1,20 @@
 {
-  "note": "Filled by the data owner after the first import: list every stock code that is not merchandise (postage, manual adjustments, fees, discounts ...). These get is_product = 0.",
-  "codes": []
+  "note": "Non-merchandise codes cover postage, fees, manual adjustments, discounts, samples and gift vouchers. The import sets is_product to 0 for these codes.",
+  "codes": [
+    "AMAZONFEE",
+    "BANK CHARGES",
+    "C2",
+    "CRUK",
+    "D",
+    "DOT",
+    "M",
+    "POST",
+    "S",
+    "gift_0001_10",
+    "gift_0001_20",
+    "gift_0001_30",
+    "gift_0001_40",
+    "gift_0001_50",
+    "m"
+  ]
 }
