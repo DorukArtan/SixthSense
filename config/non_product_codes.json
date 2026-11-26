@@ -1,0 +1,4 @@
+{
+  "note": "Filled by the data owner after the first import: list every stock code that is not merchandise (postage, manual adjustments, fees, discounts ...). These get is_product = 0.",
+  "codes": []
+}

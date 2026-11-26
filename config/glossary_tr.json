@@ -1,0 +1,34 @@
+{
+  "version": "0.1",
+  "dataset_range": ["2010-12-01 00:00:00", "2011-12-10 00:00:00"],
+  "metrics": {
+    "net_sales": ["net satış", "ciro", "satış tutarı", "hasılat", "gelir"],
+    "gross_sales": ["brüt satış"],
+    "credit": ["iade", "iptal", "düzeltme"],
+    "sold_qty": ["satılan adet", "kaç adet", "adet"],
+    "invoice_count": ["fatura sayısı", "kaç fatura", "sipariş sayısı", "kaç sipariş"]
+  },
+  "ambiguous_terms": {
+    "en çok satan": ["sold_qty", "net_sales"],
+    "en iyi": ["sold_qty", "net_sales"]
+  },
+  "countries": {
+    "Fransa": "France",
+    "Almanya": "Germany",
+    "İrlanda": "EIRE",
+    "Güney Afrika": "RSA",
+    "İngiltere": "United Kingdom",
+    "Birleşik Krallık": "United Kingdom"
+  },
+  "months": {
+    "ocak": 1, "şubat": 2, "mart": 3, "nisan": 4, "mayıs": 5, "haziran": 6,
+    "temmuz": 7, "ağustos": 8, "eylül": 9, "ekim": 10, "kasım": 11, "aralık": 12
+  },
+  "unsupported_topics": {
+    "maliyet": "alış maliyeti",
+    "kâr": "alış maliyeti",
+    "kar marjı": "alış maliyeti",
+    "stok": "stok seviyesi",
+    "müşteri": "müşteri kimliği (aktarılmıyor)"
+  }
+}
