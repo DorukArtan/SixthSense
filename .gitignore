@@ -1,0 +1,24 @@
+# secrets
+.env
+
+# data and model files (setup.sh downloads / builds them)
+data/
+*.xlsx
+*.sqlite
+*.sqlite-journal
+*.gguf
+
+# evaluation outputs
+eval/results/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# os / editors
+.DS_Store
+.idea/
+.vscode/
