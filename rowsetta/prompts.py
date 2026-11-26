@@ -1,6 +1,6 @@
 """Step 3 - Prompt construction.
 
-Owner: TBD
+Owner: Muhammed Said Tosun
 
 The prompt holds: the schema summary (db/schema.sql), metric definitions,
 the values linking.py matched, and 3-5 examples from eval/dev_questions.jsonl.

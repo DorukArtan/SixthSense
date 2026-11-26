@@ -1,6 +1,6 @@
 """Step 2 - Turkish term and value linking (schema linking).
 
-Owner: TBD
+Owner: Duygu Özbek
 
 Maps a Turkish question onto the schema with config/glossary_tr.json:
 metric synonyms, Turkish country names -> stored values (Fransa -> France,

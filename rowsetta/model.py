@@ -1,6 +1,6 @@
 """Step 4 - Model client with two backends.
 
-Owner: TBD
+Owner: Muhammed Said Tosun
 
 OllamaBackend: local model through Ollama structured outputs, temperature 0.
 GeminiBackend: commercial alternative (method E); key from GEMINI_API_KEY.

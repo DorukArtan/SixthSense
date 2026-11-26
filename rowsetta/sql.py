@@ -1,6 +1,6 @@
 """Steps 5-6 - SQL validation and read-only execution.
 
-Owner: TBD
+Owner: Mehmet Doruk Artan
 
 validate(): SQLGlot (dialect="sqlite") parses exactly one statement; only
 SELECT or WITH ... SELECT; tables limited to `sales` and `products`; named

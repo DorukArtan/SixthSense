@@ -1,6 +1,6 @@
 """Build data/rowsetta.sqlite from the UCI Online Retail workbook.
 
-Owner: TBD
+Owner: Mehmet Doruk Artan
 Usage: python scripts/import_uci.py [path/to/Online Retail.xlsx]
 
 Rules (docs/architecture.md, "Aktarım kuralları"):

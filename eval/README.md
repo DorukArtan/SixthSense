@@ -1,5 +1,7 @@
 # Evaluation
 
+Owners: runner and method A templates — Mehmet Doruk Artan; test set (`questions.jsonl`, `dev_questions.jsonl`) — written by Duygu Özbek, gold SQL checked by Nilsu Kına.
+
 - `dev_questions.jsonl` — about 20 development questions. Prompts and the glossary are tuned only on these.
 - `questions.jsonl` — frozen test set (2 December): 60 answerable + 6 ambiguous + 6 unsupported. Never used in prompts.
 - `templates.py` — method A (8–10 fixed SQL templates, no LLM).

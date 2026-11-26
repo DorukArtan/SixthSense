@@ -1,6 +1,6 @@
 """Controller - runs steps 2-7 and owns the single repair attempt.
 
-Owner: TBD
+Owner: Muhammed Said Tosun
 
 Flow (docs/architecture.md, "Sorgu akışı"):
   link -> (ambiguity? return clarify) -> prompt -> model

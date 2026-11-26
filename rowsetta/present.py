@@ -1,6 +1,6 @@
 """Step 7 - Result presentation.
 
-Owner: TBD
+Owner: Nilsu Kına
 
 Money columns (*_u) are integer units: 1 GBP = 10,000 units. Convert with
 Decimal after aggregation and round half up to two decimals for display only.

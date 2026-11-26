@@ -293,7 +293,16 @@ gantt
 
 ## Görev dağılımı
 
-Ekip listesi gelince doldurulacak. Her üye en az bir teknik bileşenin sahibi olmalı (bileşen tablosundaki 1–9).
+En kritik bileşenler (veri, LLM akışı, SQL güvenliği, değerlendirme çalıştırıcısı) Mehmet Doruk Artan ve Muhammed Said Tosun'te; arayüz, sunum, Türkçe eşleştirme ve test seti Nilsu Kına ile Duygu Özbek'te.
+
+| Üye | Teknik bileşenler (bileşen tablosundaki no.) | Dosyalar | Ek sorumluluk |
+| --- | --- | --- | --- |
+| Muhammed Said Tosun | 3 Prompt oluşturma · 4 Model istemcisi · 6 Akış denetleyicisi | `rowsetta/prompts.py`, `rowsetta/model.py`, `rowsetta/pipeline.py` | 27 Kasım model pilotu; tek düzeltme hakkı; B–E yöntemlerinin akıştaki ayarları |
+| Mehmet Doruk Artan | 1 Veri aktarımı · 5 SQL doğrulama ve çalıştırma · 9 Değerlendirme (çalıştırıcı + yöntem A) | `scripts/import_uci.py`, `db/schema.sql`, `rowsetta/sql.py`, `eval/run.py`, `eval/templates.py` | `config/non_product_codes.json`; sonuç tabloları (`eval/results/`) |
+| Nilsu Kına | 7 Sonuç sunumu · 8 Arayüz | `rowsetta/present.py`, `app.py` | Test setindeki referans SQL'lerin kontrolü; Excel süre ölçümü (R7) |
+| Duygu Özbek | 2 Sözlük ve eşleştirme · 9 Değerlendirme (test seti) | `rowsetta/linking.py`, `config/glossary_tr.json`, `eval/questions.jsonl`, `eval/dev_questions.jsonl` | 72 soruluk test seti ve 20 soruluk geliştirme seti |
+
+Kritik yol: gerçek veride test için Mehmet Doruk Artan'un aktarımı 28 Kasım'a, ilk uçtan uca akış için Muhammed Said Tosun'in `pipeline.py`'si 30 Kasım'a yetişmeli. O zamana kadar herkes `tests/fixtures/` içindeki sentetik veriyle çalışır.
 
 ## Kaynaklar
 

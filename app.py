@@ -1,6 +1,6 @@
 """Rowsetta Streamlit app - steps 1 and 8 (question in, answer screen out).
 
-Owner: TBD
+Owner: Nilsu Kına
 Run: streamlit run app.py
 """
 

@@ -1,3 +1,4 @@
+-- Owner: Mehmet Doruk Artan
 -- Rowsetta analytics snapshot. One row of sales represents one accepted invoice line.
 -- Money is stored as integer units: 1 GBP = 10,000 units.
 PRAGMA foreign_keys = ON;

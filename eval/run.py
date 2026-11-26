@@ -1,6 +1,6 @@
 """Run methods A-E on eval/questions.jsonl and write eval/results/*.csv.
 
-Owner: TBD
+Owner: Mehmet Doruk Artan
 Usage: python eval/run.py --method D [--questions eval/questions.jsonl]
 
 Per question record: id, method, status, correct, attempts, model calls,
