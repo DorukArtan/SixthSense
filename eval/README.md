@@ -19,3 +19,16 @@ One JSON object per line:
 - Compare money in integer units before display rounding.
 
 Execution accuracy = answerable questions whose result equals the gold result / 60. Errors and unexpected clarifications count as failures.
+
+## Run an evaluation
+
+```bash
+python eval/run.py --method A --questions eval/dev_questions.jsonl
+python eval/run.py --method D
+```
+
+The runner validates the JSONL and executes the reference SQL before scoring answers. Methods B, C and D use the configured local Ollama model. Method E uses Gemini. The CSV records the SHA-256 of the SQLite snapshot and question file so runs using the same inputs can be compared.
+
+`correct` scores the final answer and `first_attempt_correct` counts a repaired query as a first-attempt failure. Clarification and unsupported-question scores use their expected statuses. The CSV includes per-question timings in milliseconds, attempts, model calls, token counts and the SQL or error message. Unreported token counts are blank.
+
+Use the same `--max-rows` for all methods in a comparison. If a reference query exceeds that cap, raise it so the runner can compare complete rows.
