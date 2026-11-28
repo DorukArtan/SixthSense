@@ -9,7 +9,7 @@ python3 -m pip install -r requirements.txt
 RAW_DIR="data/raw"
 XLSX="$RAW_DIR/Online Retail.xlsx"
 # Verify this URL on https://archive.ics.uci.edu/dataset/352/online+retail before the demo.
-UCI_ZIP_URL="${UCI_ZIP_URL:-https://archive.ics.uci.edu/static/public/352/online+retail.zip}"
+UCI_ZIP_URL="${UCI_ZIP_URL:-https://archive.ics.uci.edu/static/public/352/online%2Bretail.zip}"
 
 mkdir -p "$RAW_DIR"
 if [ ! -f "$XLSX" ]; then
